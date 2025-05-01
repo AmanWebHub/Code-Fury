@@ -1,0 +1,436 @@
+/* Universal section */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #eaeaec;
+}
+
+/* --------------------------- */
+
+/* nabar section */
+
+.navbar {
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 60px;
+  margin-top: 1.5rem;
+}
+.navbar-brand {
+  margin: auto 5px;
+  font-weight: 700;
+}
+
+.navbar-brand img {
+  border-radius: 60%;
+}
+
+.nav-link {
+  margin: auto 2.3rem;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.navbar-toggler {
+  border-radius: 25px;
+}
+
+.nav-link:hover {
+  box-shadow: inset 100px 0 0 0 #212529;
+  border-radius: 60px;
+  padding: 5px;
+  color: white;
+}
+
+/* --------------------------- */
+
+/* cover section */
+.cover-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/cover-image.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-textBox {
+  margin-top: 8%;
+}
+
+.cover-textBox > h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.cover-btn {
+  border: 1px #fff solid;
+  border-radius: 60px;
+  color: #fff;
+  box-shadow: none;
+}
+
+.cover-btn:hover {
+  border: 1px #fff solid;
+}
+
+/* --------------------------- */
+
+/* Message section */
+
+#message {
+  display: flex;
+  margin: 5rem auto;
+}
+
+.message-container {
+  position: relative;
+  top: 3rem;
+  padding: 5rem 3.2rem;
+  background-color: #fff;
+  border-radius: 35px;
+  text-align: center;
+  color: #000;
+}
+
+.message-header {
+  margin: 2rem auto;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.message-text {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+/* --------------------------- */
+
+/* Gallery section */
+#gallery {
+  display: flex;
+  position: relative;
+  top: 6rem;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  overflow: hidden;
+  margin: 5rem auto;
+  padding: 10rem auto;
+  background-color: #ffffff;
+}
+
+/* Flex container for images with hidden scrollbar */
+.grid-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Flex items (images) */
+.grid-item {
+  display: inline-block;
+  flex: none;
+  padding: 1rem;
+  overflow: hidden;
+}
+#gallery img {
+  border-radius: 2rem;
+  max-height: 30rem;
+  width: 100%;
+}
+/* --------------------------- */
+
+/* Questions section */
+#questions {
+  margin-top: 9%;
+  margin-bottom: 2%;
+}
+
+.questionsHeader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin: 3rem auto;
+}
+
+.questionsCard {
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  width: 85%;
+}
+.questionsCard-title {
+  display: flex;
+  position: relative;
+  top: 1.5rem;
+  text-align: left;
+  font-weight: 300;
+}
+
+.questionsCard-text {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.questionsCard-icon {
+  transition: transform 0.3s ease;
+  margin-left: 95%;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+/* --------------------------- */
+
+/* Features section */
+#features {
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+.featuresContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/features-background-image.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.featuresCards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+.featuresCards {
+  display: flex;
+  position: relative;
+  top: 15%;
+}
+.featuresCard {
+  padding: 10px 20px;
+  margin: 10px;
+  min-width: 18.2rem;
+  min-height: 14rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+.featuresCard-body {
+  padding: 30px 15px;
+}
+.featuresCard-title {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.featuresCard-text {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.featuresCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.featuresContainer::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* --------------------------- */
+
+/* Scores  sectionn */
+#score {
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+.score-container {
+  background-color: #fff;
+}
+.score-cards {
+  text-align: center;
+  margin: 3rem 18.5%;
+  display: flex;
+}
+
+.scoreCard-title {
+  font-weight: bold;
+  color: RED;
+  font-size: 4rem;
+}
+
+.scoreCard-text {
+  font-size: 1.5rem;
+}
+/* ------------------- */
+
+/* updates */
+#updates {
+  background-color: #fff;
+}
+
+.updates-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.updatesCards {
+  /* margin-top: 3rem; */
+  margin: 3rem 2rem auto 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.updatesCard {
+  border: none;
+  margin: 3rem auto;
+  padding: 10px;
+}
+.updatesCard-img {
+  border-radius: 2.3rem;
+  height: 400px;
+  width: 100%;
+}
+
+.updatesCard-title {
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+.updatesCard-date {
+  font-weight: 400;
+}
+.updatesCard-text {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.updatesCard-btn {
+  padding: 0.8rem 2.5rem;
+  border-radius: 2.1rem;
+}
+/* __________________ */
+
+/* testimonial section */
+
+#testimonial {
+  background-color: #fff;
+}
+
+.testimonial-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.testimonial-subHeader {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+
+
+.testimonialCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.testimonialCard {
+  text-align: center;
+  margin: 15px;
+  width: 24rem;
+  border: none;
+  
+}
+
+.testimonialCard-rating{
+  margin-bottom: 30px;
+  color: green;
+}
+
+.testimonialCard-name{
+  margin-bottom: 30px;
+  font-size: 24px;
+  margin-top: 10px;
+
+}
+
+.testimonialCard-text{
+  font-size: 20px;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+.testimonialCard-btn{
+  padding: 0.8rem 2.5rem;
+  border-radius: 2.1rem;
+  margin-bottom: 5rem;
+}
+/* ---------------------- */
+
+/* Article Section */
+#article{
+  margin-top: 10rem;
+  margin-bottom: 0;
+}
+.articleConainer{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/article-background-image.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---------------------- */
+@media (max-width: 768px) {
+  .questionsHeader {
+    margin-top: 30%;
+  }
+  .featuresCard {
+    min-width: 100%;
+  }
+  .updatesCard-btn{
+    margin: 1rem auto;
+    padding: 0.8rem 3;
+  }
+}
